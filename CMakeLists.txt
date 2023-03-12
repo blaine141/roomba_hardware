@@ -20,7 +20,7 @@ ament_auto_find_build_dependencies()
 
 cmake_host_system_information(RESULT HOSTNAME QUERY HOSTNAME)
 
-if(HOSTNAME STREQUAL "jeeves")
+if(HOSTNAME STREQUAL "radxa-zero")
   add_executable(compass src/compass.cpp)
   target_link_libraries(compass -lmraa)
   ament_target_dependencies(compass rclcpp std_msgs geometry_msgs)
